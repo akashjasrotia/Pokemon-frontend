@@ -13,7 +13,7 @@ export default function LoginPage() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/isLoggedIn", {
+    fetch("https://pokemon-backend-x7br.onrender.com/isLoggedIn", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
@@ -42,7 +42,7 @@ export default function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:3000/login", {
+      const res = await fetch("https://pokemon-backend-x7br.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -127,3 +127,4 @@ export default function LoginPage() {
     </div>
   );
 }
+
