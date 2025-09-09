@@ -14,7 +14,7 @@ export default function Home() {
   const limit = 20;
   const fetchLogin = async () => {
     try {
-      const res = await fetch("http://localhost:3000/isLoggedIn", {
+      const res = await fetch("https://pokemon-backend-x7br.onrender.com/isLoggedIn", {
         method: "GET",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -43,7 +43,7 @@ export default function Home() {
   };
   async function fetchUser() {
     try {
-      const res = await fetch("http://localhost:3000/me", {
+      const res = await fetch("https://pokemon-backend-x7br.onrender.com/me", {
         method: "GET",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -111,3 +111,4 @@ export default function Home() {
     </div>
   );
 }
+
