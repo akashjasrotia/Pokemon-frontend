@@ -7,7 +7,7 @@ export default function Details({ isOpen, handleClose, pokemon }) {
  
   const handleCatch = async(pokemon)=>{
     try {
-      const res = await fetch("http://localhost:3000/catch", {
+      const res = await fetch("https://pokemon-backend-x7br.onrender.com/catch", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -128,3 +128,4 @@ export default function Details({ isOpen, handleClose, pokemon }) {
     </div>
   );
 }
+
