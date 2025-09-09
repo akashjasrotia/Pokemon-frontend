@@ -13,7 +13,7 @@ export default function SignupPage() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/isLoggedIn", {
+    fetch("https://pokemon-backend-x7br.onrender.com/isLoggedIn", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
@@ -42,7 +42,7 @@ export default function SignupPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:3000/signup", {
+      const res = await fetch("https://pokemon-backend-x7br.onrender.com/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -141,3 +141,4 @@ export default function SignupPage() {
     </div>
   );
 }
+
