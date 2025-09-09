@@ -7,7 +7,7 @@ export default function Cought() {
   const [data, setData] = useState([]);
   const fetchCought = async () => {
     try {
-      const res =await fetch("http://localhost:3000/cought", {
+      const res =await fetch("https://pokemon-backend-x7br.onrender.com/cought", {
         method: "GET",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -41,3 +41,4 @@ export default function Cought() {
     </div>
   );
 }
+
